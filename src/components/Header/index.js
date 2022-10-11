@@ -5,7 +5,6 @@ import Navigation from "../Navigation";
 export default function Header() {
   return (
     <div>
-      <h1 className="text-start">Andrew Hudgins</h1>
       <Navigation></Navigation>
     </div>
   );
