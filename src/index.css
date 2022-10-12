@@ -28,6 +28,10 @@ ul {
   list-style: none;
 }
 
+p {
+  display: inline-block;
+}
+
 .nav-link {
   color: var(--primary);
   font-family: var(--accent-font);
@@ -69,12 +73,30 @@ ul {
 }
 
 .modalImg {
-  max-height: 300px;
-  width: auto;
+  max-width: 700px;
+}
+
+.modalText {
+  /* display: inline-block; */
 }
 
 .modalDesc {
-  margin-top: 10px;
+  /* display: inline-block; */
+}
+
+.modalLang {
+  /* margin: 10px; */
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.modalLinks {
+  /* margin: 10px; */
+  /* padding: 5px 5px; */
+  text-decoration: none;
+  font-size: 12px;
+  color: black;
+  border: solid 2px black;
 }
 
 .modalBtn {
