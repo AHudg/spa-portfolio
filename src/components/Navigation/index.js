@@ -2,11 +2,24 @@ import React from "react";
 
 export default function Navigation() {
   return (
-    <div>
-      <ul className="row p-4 my-0 justify-content-center text-center">
-        <li className="col-3 p-0">About Me</li>
-        <li className="col-3 p-0">Portfolio</li>
-        <li className="col-3 p-0">Contact Us</li>
+    <div className="my-2">
+      {/* add a home route */}
+      <ul className="row mx-1 justify-content-end text-center">
+        <li className="col-3 p-0">
+          <a className="nav-link" href="#about">
+            About Me
+          </a>
+        </li>
+        <li className="col-3 p-0">
+          <a className="nav-link" href="#portfolio">
+            Portfolio
+          </a>
+        </li>
+        <li className="col-3 p-0">
+          <a className="nav-link" href="#contact">
+            Contact
+          </a>
+        </li>
       </ul>
     </div>
   );

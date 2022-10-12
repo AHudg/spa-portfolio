@@ -1,3 +1,14 @@
+:root {
+  --accent-font: "Zen Maru Gothic";
+  --primary: rgb(174, 50, 195);
+  --secondary: rgb(184, 50, 93);
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -15,4 +26,27 @@ code {
 
 ul {
   list-style: none;
+}
+
+.nav-link {
+  color: var(--primary);
+  font-family: var(--accent-font);
+}
+
+.nav-link:hover {
+  color: var(--secondary);
+  background-color: white;
+}
+
+.selfie {
+  border-radius: 30px;
+  margin-bottom: 15px;
+}
+
+.accent-text {
+  font-size: 20px;
+  font-family: var(--accent-font);
+  font-weight: bolder;
+  color: var(--secondary);
+  margin: 20px 0;
 }

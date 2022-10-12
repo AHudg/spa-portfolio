@@ -1,20 +1,20 @@
 import React from "react";
+import selfie from "../../assets/selfie.png";
 
 export default function About() {
   return (
-    <div>
+    <div className="row justify-content-center">
       <img
-        src="../../assets/selfie.png"
+        src={selfie}
         alt="A selfie of myself in front of bougainvilleas in Paraguay."
+        className="col-9 selfie"
       ></img>
-      <div>
-        <p>
-          <span>
-            I'm Andrew, a biomedical engineer who recently dived head first into
-            software engineering.
-          </span>
-          <br />
-          <br />
+      <div className="col-11">
+        <span className="accent-text">
+          I'm Andrew, a biomedical engineer who recently dived head first into
+          software engineering.
+        </span>
+        <p className="mt-3 text-start">
           While I am new to this industry, programming is not foreign to me; I
           started my journey in university learning MATLAB, LabVIEW, and C.
           After graduation, I went to work for a magnet hospital in the Houston
