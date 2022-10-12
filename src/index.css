@@ -50,3 +50,33 @@ ul {
   color: var(--secondary);
   margin: 20px 0;
 }
+
+.modalBackdrop {
+  background: rgba(256, 256, 256, 0.5);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.modalContainer {
+  background: white;
+}
+
+.modalTitle {
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+.modalImg {
+  max-height: 300px;
+  width: auto;
+}
+
+.modalDesc {
+  margin-top: 10px;
+}
+
+.modalBtn {
+  margin-bottom: 10px;
+}

@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
+import Modal from "../Modal";
 
 export default function Project() {
+  // initialize state variable for tracking if modal is upon w/ initial value = false (or closed)
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  // initialize state variable for individual projects when selected so the modal can display it's information
+  const [selectedProject, setSelectedProject] = useState();
+  // initialize data here
   const projectInfo = [
     {
       id: 0,
@@ -34,7 +40,7 @@ export default function Project() {
       name: "Thinking Social",
       description:
         "A back-end only application that meets the requirements for a RESTful API. Users are can add friends, make thoughts, and react to others.",
-      language: ["MongoDB", "Express", "Node.js"],
+      languages: ["MongoDB", "Express", "Node.js"],
       url: "",
       github: "https://github.com/AHudg/thinking-social-api",
     },
@@ -43,7 +49,7 @@ export default function Project() {
       name: "Company Stalking",
       description:
         "This product was used to help learn the basics of databases. This back-end application host a database for the user to keep track of employee informaiton.",
-      language: ["MySQL", "Node.js"],
+      languages: ["MySQL", "Node.js"],
       url: "",
       github: "https://github.com/AHudg/company-stalking",
     },
@@ -52,7 +58,7 @@ export default function Project() {
       name: "Team Management",
       description:
         "This back-end application focused on Object Oriented Programming (OOP) and Test Driven Development (TDD). It is uses the command line to accept user input and populates a corresponding HTML page.",
-      language: ["Jest", "Express", "Node.js"],
+      languages: ["Jest", "Express", "Node.js"],
       url: "",
       github: "https://github.com/AHudg/ProfileBuilder-Team-Management",
     },
@@ -61,7 +67,7 @@ export default function Project() {
       name: "Oh, The Weather Outside Is",
       description:
         "This front end application uses server API calls to populate the weather forecast based on cities. It allows the user to save the queries for future reference.",
-      language: ["JQuery", "Foundation CSS", "Open Weather Server API"],
+      languages: ["JQuery", "Foundation CSS", "Open Weather Server API"],
       url: "https://ahudg.github.io/oh-the-weather-outside-is/",
       github: "https://github.com/AHudg/oh-the-weather-outside-is",
     },
@@ -70,18 +76,34 @@ export default function Project() {
       name: "JavaScript Pop Quiz",
       description:
         "A pop quiz over everyone's favorite language: JavaScript! This front end application served as one of my first JavaScript deliverables.",
-      language: ["JavaScript", "CSS", "HTML"],
+      languages: ["JavaScript", "CSS", "HTML"],
       url: "https://ahudg.github.io/javascript-pop-quiz/",
       github: "https://github.com/AHudg/javascript-pop-quiz",
     },
   ];
+
+  // callback function triggered when click occurs
+  const toggleModal = (project, i) => {
+    // calls setter to push specific project to selectedProject variable
+    // TODO: WHY DO THE ...project? is it because I'm adding that i?
+    setSelectedProject({ ...project, i: i });
+    // setter returns the opposite of the current variable state
+    setIsModalOpen(!isModalOpen);
+  };
+
   return (
-    <div className="row">
+    <div className="row justify-content-center">
+      {/* conditional statement- if isModalOpen is a truthy, populate the following code (open the modal) */}
+      {isModalOpen && (
+        <Modal onClose={toggleModal} selectedProject={selectedProject}></Modal>
+      )}
+      {/* iterate through the array w/ each project and display contents */}
       {projectInfo.map((project, i) => (
         <img
           src={require(`../../assets/portfolio/${i}.png`)}
           alt={project.name}
           className="col-10 col-md-5 m-2"
+          onClick={() => toggleModal(project, i)}
           // why do you need a key here?
           key={project.name}
         />
