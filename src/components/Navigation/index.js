@@ -1,4 +1,5 @@
 import React from "react";
+import pdf from "../../assets/oldresume.pdf";
 
 export default function Navigation({ currentPage, handleMain }) {
   return (
@@ -7,7 +8,7 @@ export default function Navigation({ currentPage, handleMain }) {
       <ul className="row mx-1 justify-content-end text-center">
         <li className="col-3 p-0">
           <a
-            className={currentPage === "About" ? "nav-link" : "nav-link"}
+            className={currentPage === "About" ? "nav-link active" : "nav-link"}
             href="#about"
             onClick={() => handleMain("About")}
           >
@@ -16,7 +17,9 @@ export default function Navigation({ currentPage, handleMain }) {
         </li>
         <li className="col-3 p-0">
           <a
-            className={currentPage === "About" ? "nav-link" : "nav-link"}
+            className={
+              currentPage === "Project" ? "nav-link active" : "nav-link"
+            }
             href="#portfolio"
             onClick={() => handleMain("Project")}
           >
@@ -26,6 +29,18 @@ export default function Navigation({ currentPage, handleMain }) {
         <li className="col-3 p-0">
           <a
             className="nav-link"
+            href={pdf}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Resume
+          </a>
+        </li>
+        <li className="col-3 p-0">
+          <a
+            className={
+              currentPage === "Contact" ? "nav-link active" : "nav-link"
+            }
             href="#contact"
             onClick={() => handleMain("Contact")}
           >
