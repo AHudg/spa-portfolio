@@ -3,13 +3,13 @@ import selfie from "../../assets/selfie.png";
 
 export default function About() {
   return (
-    <div className="row justify-content-center">
+    <div className="row mt-5 justify-content-center">
       <img
         src={selfie}
         alt="A selfie of myself in front of bougainvilleas in Paraguay."
-        className="col-9 selfie"
+        className="col-9 col-md-4 selfie"
       ></img>
-      <div className="col-11">
+      <div className="col-11 col-md-7">
         <span className="accent-text">
           I'm Andrew, a biomedical engineer who recently dived head first into
           software engineering.

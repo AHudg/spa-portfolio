@@ -2,7 +2,23 @@ import React from "react";
 
 export default function Modal({ onClose, selectedProject }) {
   const { name, description, languages, url, github, i } = selectedProject;
-  console.log(name);
+
+  const checkUrl = (url) => {
+    if (!url) {
+      return;
+    }
+    return (
+      <a
+        href={url}
+        target="_blank"
+        rel="noreferrer noopener"
+        className="col-5 modalLinks"
+      >
+        Deployed App
+      </a>
+    );
+  };
+
   return (
     <div className="row justify-content-center align-items-center modalBackdrop">
       <div className="modalContainer">
@@ -19,14 +35,7 @@ export default function Modal({ onClose, selectedProject }) {
               {language}
             </span>
           ))}
-          <a
-            href={url}
-            target="_blank"
-            rel="noreferrer noopener"
-            className="col-5 modalLinks"
-          >
-            Deployed App
-          </a>
+          {checkUrl(url)}
           <a
             href={github}
             target="_blank"
