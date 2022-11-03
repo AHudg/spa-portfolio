@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/spa-portfolio/static/css/main.60f04246.css",
-    "main.js": "/spa-portfolio/static/js/main.22b95504.js",
+    "main.js": "/spa-portfolio/static/js/main.d61b7a74.js",
     "static/js/787.b9d66382.chunk.js": "/spa-portfolio/static/js/787.b9d66382.chunk.js",
-    "static/media/2.png": "/spa-portfolio/static/media/2.efdab1c99af2413bff3f.png",
+    "static/media/3.png": "/spa-portfolio/static/media/3.efdab1c99af2413bff3f.png",
     "static/media/oldresume.pdf": "/spa-portfolio/static/media/oldresume.3141b4332afcc31e6379.pdf",
-    "static/media/1.png": "/spa-portfolio/static/media/1.eeec5bfdde08ad02d60f.png",
-    "static/media/6.png": "/spa-portfolio/static/media/6.a55ef6b2071487d18b1b.png",
-    "static/media/4.png": "/spa-portfolio/static/media/4.bdc95cab62df4799773d.png",
-    "static/media/7.png": "/spa-portfolio/static/media/7.3035d253ce3a3f48ee3c.png",
-    "static/media/0.png": "/spa-portfolio/static/media/0.46a4984af8bbebe3bb97.png",
-    "static/media/5.png": "/spa-portfolio/static/media/5.f25d4b13b760758e36d1.png",
+    "static/media/2.png": "/spa-portfolio/static/media/2.eeec5bfdde08ad02d60f.png",
+    "static/media/0.png": "/spa-portfolio/static/media/0.0b9068e6b544f1f3ec1b.png",
+    "static/media/7.png": "/spa-portfolio/static/media/7.a55ef6b2071487d18b1b.png",
+    "static/media/5.png": "/spa-portfolio/static/media/5.bdc95cab62df4799773d.png",
+    "static/media/1.png": "/spa-portfolio/static/media/1.46a4984af8bbebe3bb97.png",
+    "static/media/6.png": "/spa-portfolio/static/media/6.f25d4b13b760758e36d1.png",
     "static/media/selfie.png": "/spa-portfolio/static/media/selfie.0d6bf744d1309963c6e9.png",
-    "static/media/3.png": "/spa-portfolio/static/media/3.489620a1d7cf5c2680d7.png",
+    "static/media/4.png": "/spa-portfolio/static/media/4.489620a1d7cf5c2680d7.png",
     "static/media/background.jpg": "/spa-portfolio/static/media/background.e134626d524be58b0f80.jpg",
     "index.html": "/spa-portfolio/index.html",
     "main.60f04246.css.map": "/spa-portfolio/static/css/main.60f04246.css.map",
-    "main.22b95504.js.map": "/spa-portfolio/static/js/main.22b95504.js.map",
+    "main.d61b7a74.js.map": "/spa-portfolio/static/js/main.d61b7a74.js.map",
     "787.b9d66382.chunk.js.map": "/spa-portfolio/static/js/787.b9d66382.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.60f04246.css",
-    "static/js/main.22b95504.js"
+    "static/js/main.d61b7a74.js"
   ]
 }
